@@ -1,0 +1,56 @@
+// FOR Device
+###
+GET http://localhost:3000
+###  GET DEVICE ALL
+GET http://localhost:3000/device
+### GET DEVICE BY ID
+GET http://localhost:3000/device/134471f6-23b8-4d32-9ab0-f75a0a5140d9
+
+### ADD DEVICE
+POST http://localhost:3000/device
+Content-Type: application/json
+
+{
+    "name": "Kamar",
+    "description": "Baru",
+    "category": "Switch",
+    "value_string": "",
+    "value_boolean": false,
+    "value_number": 0,
+    "authorEmail" : "yoga@gmail.com"
+}
+### UPDATE DEVICE
+PUT http://localhost:3000/device/134471f6-23b8-4d32-9ab0-f75a0a5140d9
+Content-Type: application/json
+
+{
+    "value_boolean": true
+}
+### DELETE DEVICE
+DELETE http://localhost:3000/device/134471f6-23b8-4d32-9ab0-f75a0a5140d9
+
+
+//FOR USER
+### GET USER
+GET http://localhost:3000/user
+### ADD USER
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name" : "Maulana",
+    "email" : "it.lanlana@gmail.com"
+}
+### GET USER BY ID
+GET http://localhost:3000/user/1951000c-7a1d-4e03-880d-c1fb187faaf7
+### UPDATE DEVICE 
+PUT http://localhost:3000/user/1951000c-7a1d-4e03-880d-c1fb187faaf7
+Content-Type: application/json
+
+{
+    "name" : "Yoga Pratama Pangestu",
+    "email" : "yogaa@gmail.com"
+}
+
+###DELETE DEVICE
+DELETE http://localhost:3000/user/37bf7981-28a2-4e5f-a04b-6266a0ed905c
