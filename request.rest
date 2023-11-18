@@ -1,23 +1,23 @@
 // FOR Device
 ###
-GET http://localhost:3000
+GET https://crabby-lime-brown-bear.cyclic.app
 ###  GET DEVICE ALL
-GET http://localhost:3000/device
+GET https://crabby-lime-brown-bear.cyclic.app/device
 ### GET DEVICE BY ID
 GET http://localhost:3000/device/134471f6-23b8-4d32-9ab0-f75a0a5140d9
 
 ### ADD DEVICE
-POST http://localhost:3000/device
+POST https://crabby-lime-brown-bear.cyclic.app/device
 Content-Type: application/json
 
 {
-    "name": "Kamar",
-    "description": "Baru",
+    "name": "Tanaman",
+    "description": "teras rumah",
     "category": "Switch",
     "value_string": "",
     "value_boolean": false,
     "value_number": 0,
-    "authorEmail" : "yoga@gmail.com"
+    "authorEmail" : "it.lanlana@gmail.com"
 }
 ### UPDATE DEVICE
 PUT http://localhost:3000/device/134471f6-23b8-4d32-9ab0-f75a0a5140d9
